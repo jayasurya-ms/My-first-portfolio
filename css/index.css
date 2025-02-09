@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.root{
+    /* background-color: red; */
+    height: 800px;
+    display: flex;
+}
+#header{
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+}
+#head{
+    /* background-color:aqua; */
+    height: 80%;
+}
+.hleft{
+    /* background-color: cornflowerblue; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hright{
+    /* background-color: deeppink; */
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.subhright{
+    /* background-color: darkorange; */
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.linker{
+    font-size: larger;
+    color: black;
+}
+#body{
+    /* background-color: darkred; */
+    height: 100%;
+    display: flex;
+}
+.bleft{
+    background-color: rgb(241, 199, 185);
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 80px;
+}
+.mainbleft{
+    /* background-color: brown; */
+    width: 45%;
+    height: 80%;
+}
+.subbleft{
+    background-color:rgb(234, 205, 196) ;
+    width: 400px;
+    height: 100%;
+    box-shadow: -5px 5px 10px 0px;
+}
+.subbleft1{
+    /* background-color: aqua; */
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+ 
+.subbleft2{
+    /* background-color: aqua; */
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#pic{
+    /* width: 45%; */
+    height: 80%;
+    border-radius: 20px;
+}
+.subbleft3{
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logobleft{
+    /* background-color: black; */
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logoimg{
+    /* width: 50px; */
+    margin: 15px;
+    height: 40px;
+    border-radius: 50%;
+}
+ 
+.bright{
+    /* background-color: darkseagreen; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+.bmid{
+    /* background-color: darkgreen; */
+    width: 6%;
+    height: 100%;
+    display: flex;
+}
+.mainbright{
+    background-color:white ;
+    width: 50%;
+    height: 80%;
+    box-shadow: 5px 5px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subbright1{
+    /* background-color: blue; */
+    width: 80%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.subbright2{
+    /* background-color: brown; */
+    width: 80%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer{
+    background-color: white;
+    height:70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0%;
+    margin-top: 50px;
+}
+.subfooter1{
+    /* background-color: blue; */
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.copy{
+    font-size:100%;
+}
+.copy:hover{
+    color: blue;
+}
+.subfooter2{
+    /* background-color: darkgreen; */
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.call{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+a:hover{
+    color: blue;
+}
+/* Education */
+#ed{
+    /* background-color: brown; */
+    height: 82%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 80px;
+}
+#eparent{
+    background-color:rgb(234, 205, 196) ;
+    width: 70%;
+    height: 95%;
+    box-shadow: -5px 5px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.educant{
+    /* background-color: chartreuse; */
+    width: 80%;
+    height: 85%;
+}
+.edu{
+    font-size: x-large;
+}
+
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        height: auto; /* Adjust height */
+    }
+    
+    .hleft, .hright {
+        width: 100%; /* Full width for smaller screens */
+    }
+
+    .subhright {
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+    }
+
+    .bleft, .bright {
+        width: 100%; /* Full width on smaller screens */
+        height: auto; /* Allow height to adjust */
+        flex-direction: column; /* Stack components */
+    }
+
+    .mainbleft, .mainbright {
+        width: 90%; /* Reduce width for better fit */
+        height: auto; /* Allow height to adjust */
+    }
+
+    .subbleft {
+        width: 100%; /* Full width for the profile section */
+    }
+}
+
+@media (hover: hover) {
+    .linker:hover {
+        color: blue; /* Change color on hover for links */
+    }
+
+    .logoimg:hover {
+        border: solid 2px black; /* Border effect on hover */
+    }
+}
+
+/* Adjust image size for responsiveness */
+#pic {
+    width: 50%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+}
